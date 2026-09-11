@@ -1,0 +1,134 @@
+[versions]
+# Kotlin & Gradle
+kotlin = "1.9.23"
+androidGradlePlugin = "8.2.2"
+
+# Android SDK
+android-compileSdk = "37"
+android-minSdk = "26"
+android-targetSdk = "36"
+android-ndkVersion = "26.1.10909125"
+
+# Compose
+composeAndroid = "1.6.7"
+composeCompiler = "1.5.9"
+materialAndroid = "1.2.0"
+
+# KMP - Room Database (now supports KMP)
+room = "2.6.1"
+
+# KMP - Koin DI
+koin = "3.5.0"
+
+# KMP - Kermit Logging
+kermit = "2.0.2"
+
+# KMP - Ktor Client
+ktor = "2.3.8"
+
+# KMP - Navigation Compose
+navigation = "2.7.6"
+
+# KMP - Lifecycle & ViewModel
+lifecycle = "2.7.0"
+
+# KMP - Coroutines
+coroutines = "1.7.3"
+
+# KMP - Serialization
+serialization = "1.6.2"
+serializationJson = "1.6.2"
+
+# KMP - SQLite (multiplatform database support)
+sqlite = "0.5.0"
+
+# KMP - Datastore
+datastore = "1.0.0"
+
+# KMP - StoreFlow for state management
+storeflow = "2.5.0"
+
+# Android-specific
+androidx-core = "1.12.0"
+markdown = "4.6.2"
+
+# Testing
+junit = "4.13.2"
+espresso = "3.5.1"
+androidx-test-junit = "1.1.5"
+androidx-test-core = "1.5.0"
+kotlin-test = "1.9.23"
+
+[libraries]
+# Compose (Android specific, will use common composition)
+compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "composeAndroid" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "materialAndroid" }
+compose-material-icons = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "composeAndroid" }
+compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "composeAndroid" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version = "1.8.1" }
+compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "composeAndroid" }
+
+# Navigation (Android specific)
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+
+# Lifecycle & ViewModel (Android specific)
+lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+
+# KMP - Coroutines (shared)
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# KMP - Room Database
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+# KMP - Koin DI
+koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+
+# KMP - Kermit Logging
+kermit = { group = "co.touchlab", name = "kermit", version.ref = "kermit" }
+kermit-bugsnag = { group = "co.touchlab", name = "kermit-bugsnag", version.ref = "kermit" }
+
+# KMP - Ktor Client
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-serialization = { group = "io.ktor", name = "ktor-client-serialization", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+
+# KMP - Serialization
+serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serializationJson" }
+
+# KMP - SQLite
+sqlite-orm = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "serialization" }
+
+# KMP - Datastore
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+
+# KMP - StoreFlow State Management
+storeflow = { group = "com.mobilesurance", name = "storeflow", version.ref = "storeflow" }
+
+# Android-specific
+androidx-core = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core" }
+markdown = { group = "io.noties.markwon", name = "core", version.ref = "markdown" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+androidx-test-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-junit" }
+androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidx-test-core" }
+compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "composeAndroid" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin-test" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
