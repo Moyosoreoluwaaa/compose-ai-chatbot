@@ -1,7 +1,7 @@
 [versions]
 # Kotlin & Gradle
 kotlin = "1.9.23"
-androidGradlePlugin = "8.2.2"
+androidGradlePlugin = "9.3.1"
 
 # Android SDK
 android-compileSdk = "37"
